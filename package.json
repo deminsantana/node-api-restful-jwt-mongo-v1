@@ -1,0 +1,33 @@
+{
+  "name": "api-rest-jwt-fazt",
+  "version": "1.0.0",
+  "description": "a simple rest api to manage users and products",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "dev2": "nodemon src/index.js",
+    "test": "node --inspect src/index.js"
+  },
+  "keywords": [],
+  "author": "Engr Demin Santana",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/bcryptjs",
+    "cors": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/cors",
+    "dotenv": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/dotenv",
+    "express": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/express",
+    "helmet": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/helmet",
+    "jsonwebtoken": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/jsonwebtoken",
+    "mongoose": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/mongoose",
+    "morgan": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/morgan"
+  },
+  "devDependencies": {
+    "@babel/cli": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/@babel/cli",
+    "@babel/core": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/@babel/core",
+    "@babel/node": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/@babel/node",
+    "@babel/preset-env": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/@babel/preset-env",
+    "nodemon": "file:../../bin/nodejs/node-v16.13.1-win-x64/node_modules/nodemon"
+  }
+}
